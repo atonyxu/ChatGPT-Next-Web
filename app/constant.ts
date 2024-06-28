@@ -9,7 +9,7 @@ export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
 export const DEFAULT_API_HOST = "https://api.nextchat.dev";
-export const OPENAI_BASE_URL = "https://api.openai.com";
+export const OPENAI_BASE_URL = "https://api.siliconflow.cn/";
 export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
 
 export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
@@ -133,47 +133,29 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 const openaiModels = [
   "@cf/qwen/qwen1.5-14b-chat-awq",
+  "Qwen/Qwen2-7B-Instruct",
+  "Qwen/Qwen2-1.5B-Instruct",
+  "Qwen/Qwen1.5-7B-Chat",
+  "THUDM/glm-4-9b-chat",
+  "THUDM/chatglm3-6b",
+  "01-ai/Yi-1.5-9B-Chat-16K",
+  "01-ai/Yi-1.5-6B-Chat",
+  "Qwen/Qwen2-57B-A14B-Instruct",
   "gpt-3.5-turbo",
   "gpt-4o",
   "@cf/deepseek-ai/deepseek-math-7b-instruct",
   "@cf/defog/sqlcoder-7b-2",
-  "@cf/fblgit/una-cybertron-7b-v2-bf16",
-  "@cf/google/gemma-2b-it-lora",
-  "@cf/google/gemma-7b-it-lora",
-  "@cf/meta-llama/llama-2-7b-chat-hf-lora",
-  "@cf/meta/llama-2-7b-chat-fp16",
-  "@cf/meta/llama-2-7b-chat-int8",
   "@cf/meta/llama-3-8b-instruct",
   "@cf/meta/llama-3-8b-instruct-awq",
-  "@cf/microsoft/phi-2",
-  "@cf/mistral/mistral-7b-instruct-v0.1",
-  "@cf/mistral/mistral-7b-instruct-v0.1-vllm",
-  "@cf/mistral/mistral-7b-instruct-v0.2-lora",
-  "@cf/openchat/openchat-3.5-0106",
   "@cf/qwen/qwen1.5-0.5b-chat",
   "@cf/qwen/qwen1.5-1.8b-chat",
   "@cf/qwen/qwen1.5-7b-chat-awq",
-  "@cf/thebloke/discolm-german-7b-v1-awq",
-  "@cf/tiiuae/falcon-7b-instruct",
-  "@cf/tinyllama/tinyllama-1.1b-chat-v1.0",
-  "@hf/google/gemma-7b-it",
   "@hf/meta-llama/meta-llama-3-8b-instruct",
-  "@hf/mistral/mistral-7b-instruct-v0.2",
-  "@hf/nexusflow/starling-lm-7b-beta",
-  "@hf/nousresearch/hermes-2-pro-mistral-7b",
   "@hf/thebloke/deepseek-coder-6.7b-base-awq",
   "@hf/thebloke/deepseek-coder-6.7b-instruct-awq",
-  "@hf/thebloke/llama-2-13b-chat-awq",
-  "@hf/thebloke/llamaguard-7b-awq",
-  "@hf/thebloke/mistral-7b-instruct-v0.1-awq",
-  "@hf/thebloke/neural-chat-7b-v3-1-awq",
-  "@hf/thebloke/openhermes-2.5-mistral-7b-awq",
-  "@hf/thebloke/zephyr-7b-beta-awq",
 ];
 
-const googleModels = [
-  "gemini-1.5-pro-latest",
-];
+const googleModels = ["gemini-1.5-pro-latest"];
 
 const anthropicModels = [
   "claude-3-sonnet-20240229",
